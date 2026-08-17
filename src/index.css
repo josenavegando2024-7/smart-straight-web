@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #F8FAFC;
+    color: #062654;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .gradient-navy {
+    background: linear-gradient(135deg, #062654 0%, #0F52BA 100%);
+  }
+  .gradient-blue-radial {
+    background: radial-gradient(ellipse at top, #0F52BA 0%, #062654 70%);
+  }
+  .shadow-premium {
+    box-shadow: 0 4px 6px -1px rgba(6, 38, 84, 0.07), 0 2px 4px -2px rgba(6, 38, 84, 0.05), 0 0 0 1px rgba(6, 38, 84, 0.03);
+  }
+  .shadow-premium-lg {
+    box-shadow: 0 20px 40px -12px rgba(6, 38, 84, 0.15), 0 8px 16px -8px rgba(6, 38, 84, 0.08), 0 0 0 1px rgba(6, 38, 84, 0.04);
+  }
+  .shadow-cta {
+    box-shadow: 0 4px 14px -2px rgba(211, 0, 0, 0.4), 0 2px 6px -2px rgba(211, 0, 0, 0.2);
+  }
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
